@@ -17,4 +17,13 @@ public class MyPrint {
         }
         return str.toString();
     }
+
+    public final static String printRange(int start, int end, int size){
+        StringBuffer str = new StringBuffer("");
+        for(int i = start; ; i++){
+            if(i >= size & i%size > end) break;
+            str.append(i%size + " ");
+        }
+        return str.toString();
+    }
 }
